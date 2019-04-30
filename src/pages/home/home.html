@@ -1,0 +1,19 @@
+
+
+<ion-content class="card-background-page"  padding>
+  <ion-card *ngFor='let news of items ' (click)='delay(news[0])' >
+      <img src="../../assets/imgs/img.png"/>
+      <br>
+    
+      <ion-list>
+          <ion-item>
+              <h1><b>{{news[1]['title']}}</b></h1>     
+              <button ion-button outline item-end icon-start color="danger" (click)="remove(news[0])">
+              <ion-icon name="md-trash"></ion-icon>
+              Delete
+            </button>
+          </ion-item>
+        </ion-list>
+      <br>
+  </ion-card>
+</ion-content>

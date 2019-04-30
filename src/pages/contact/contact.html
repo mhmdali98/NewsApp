@@ -1,0 +1,21 @@
+
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Title News</ion-label>
+      <ion-input [(ngModel)]='locaiation.title' type="text" ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Descrbtion News</ion-label>
+      <ion-input [(ngModel)]='locaiation.dscrb' type="text" ></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <button ion-button full large (click)="addNews(locaiation)" color='tab'>Add News</button>
+  </ion-item>
+
+  </ion-list>
+</ion-content>
